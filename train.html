@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fef6f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+        }
+
+        header {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 16px;
+            color: gray;
+        }
+
+        .filters {
+            width: 250px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-right: 20px;
+            height: fit-content;
+        }
+
+        .filters h3, .filters h4 {
+            margin-bottom: 10px;
+        }
+
+        .filters label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .train-list {
+            flex: 1;
+        }
+</style>     
+<body>
+
+    <div class="container">
+        <header>
+            <h1>New Delhi (NDLS) → Mumbai Central (MMCT)</h1>
+            <p>Tuesday, 29 Apr 2025</p>
+        </header>
+
+        <aside class="filters">
+            <h3>Filters</h3>
+            <div class="quota">
+                <h4>Quota</h4>
+                <label><input type="radio" name="quota" checked> General</label>
+                <label><input type="radio" name="quota"> Tatkal</label>
+                <label><input type="radio" name="quota"> Ladies</label>
+                <label><input type="radio" name="quota"> Senior Citizen/Lower Berth</label>
+            </div>
+
+            <div class="station">
+                <h4>Origin Station</h4>
+                <label><input type="checkbox"> NZM</label>
+                <label><input type="checkbox"> NDLS</label>
+                <label><input type="checkbox"> DEE</label>
+                <label><input type="checkbox"> SZM</label>
+                <label><input type="checkbox"> ANDI</label>
+            </div>
+
+            <div class="station">
+                <h4>Destination Station</h4>
+                <label><input type="checkbox"> MMCT</label>
+                <label><input type="checkbox"> CSMT</label>
+                <label><input type="checkbox"> PNWL</label>
+                <label><input type="checkbox"> BDTS</label>
+            </div>
+        </aside>
+    </div> 
+</body>
+</head>
+</html>
